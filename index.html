@@ -31,7 +31,6 @@
   gtag('config', 'G-1GLX2J0B3X');
 </script>
   
-
   <style>
     :root {
       --navy-950: #041126;
@@ -137,12 +136,12 @@
     }
 
     h1 {
-      font-size: clamp(3rem, 8vw, 6.6rem);
+      font-size: clamp(3rem, 5.5vw, 5.6rem);
       color: var(--white);
     }
 
     h2 {
-      font-size: clamp(2rem, 5vw, 4rem);
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
       color: var(--navy-900);
       margin-bottom: 16px;
     }
@@ -311,7 +310,7 @@
       grid-template-columns: 1.05fr 0.95fr;
       gap: 50px;
       align-items: center;
-      padding: 132px 0 180px;
+      padding: 0 0 180px;
     }
 
     .live-badge {
@@ -424,6 +423,7 @@
 
     .now-playing {
       margin-top: 20px;
+      line-height: 2em;
     }
 
     .now-playing small {
@@ -767,7 +767,7 @@
     }
 
     .qr-placeholder {
-      width: 190px;
+      width: 195px;
       aspect-ratio: 1;
       display: grid;
       place-items: center;
@@ -826,7 +826,7 @@
     .verse blockquote {
       max-width: 900px;
       margin: auto;
-      font-size: clamp(2rem, 5vw, 4.8rem);
+      font-size: clamp(2rem, 4vw, 4rem);
       font-weight: 900;
       line-height: 1.12;
       letter-spacing: -0.04em;
@@ -1010,7 +1010,7 @@
 <body>
   <header class="site-header" id="siteHeader">
     <div class="container nav">
-      <a href="#inicio" class="brand" aria-label="Rádio Luz e Louvor">
+      <a href="https://horizon4282.com.br/radio-luz-louvor.html" class="brand" aria-label="Rádio Luz e Louvor">
         <span class="brand-mark">🎙️</span>
         <span class="brand-text">
           <small>RÁDIO</small>
@@ -1051,8 +1051,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#ouvir" class="btn btn-primary">▶ Ouvir agora</a>
-            <button class="btn btn-secondary" id="installBtn" hidden>
+            <a href="https://horizon4282.com.br/radio-luz-louvor.html" class="btn btn-primary">Ir para a rádio</a>
+            <button class="btn btn-secondary" id="installBtn" hidden style="display:none">
               ⬇ Instalar aplicativo
             </button>
           </div>
@@ -1069,7 +1069,7 @@
             <p id="heroProgramTitle">A sua companhia 24 horas no ar</p>
           </div>
 
-          <div class="player-row">
+          <div class="player-row" style="display:none">
             <button class="play-btn" id="heroPlayBtn" aria-label="Tocar rádio">▶</button>
             <div class="player-progress" aria-hidden="true"><span></span></div>
             <button class="volume" id="muteBtn" aria-label="Silenciar">🔊</button>
@@ -1150,9 +1150,7 @@
             <h3 id="trackTitle">Rádio Luz e Louvor</h3>
             <div class="program" id="programTitle">A sua companhia 24 horas no ar</div>
 
-            <p style="margin-top:16px;">
-              Clique no player abaixo para iniciar a transmissão.
-            </p>
+   
 
             <div class="audio-wrap">
               <!--
@@ -1160,16 +1158,16 @@
                 Exemplo:
                 <source src="https://seudominio.com/radio.mp3" type="audio/mpeg">
               -->
-              <audio id="radioPlayer" controls preload="none">
+              <audio id="radioPlayer" controls preload="none" style="display: none;">
                 <source src="https://SEU-LINK-DO-STREAM-AQUI/radio.mp3" type="audio/mpeg" />
-                Seu navegador não suporta áudio HTML5.
               </audio>
             </div>
 
             <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:22px;">
-              <button class="btn btn-primary" id="mainPlayBtn">▶ Ouvir agora</button>
-              <button class="btn btn-outline" id="shareBtn">↗ Compartilhar</button>
-              <button class="btn btn-outline" id="favoriteBtn">♡ Favoritar</button>
+              <button class="btn btn-primary" id="mainPlayBtn">
+                <a href="https://horizon4282.com.br/radio-luz-louvor">Ir para a rádio</a></button>
+              <button class="btn btn-outline" id="shareBtn" style="display:none">↗ Compartilhar</button>
+              <button class="btn btn-outline" id="favoriteBtn"  style="display:none">♡ Favoritar</button>
             </div>
           </div>
         </div>
@@ -1241,7 +1239,7 @@
             <div class="device-item">📲 Tablet</div>
           </div>
 
-          <button class="btn btn-primary" id="installBtnSection">
+          <button class="btn btn-primary" id="installBtnSection" style="display:none">
             ⬇ Instalar aplicativo
           </button>
         </div>
@@ -1270,7 +1268,7 @@
 
             <a
               class="btn btn-outline"
-              href="https://chat.whatsapp.com/SEU-LINK-DO-GRUPO"
+              href="https://chat.whatsapp.com/KBx52lYWlfr8g5DCjp4HWV"
               target="_blank"
               rel="noopener"
               style="margin-top:22px;"
@@ -1280,7 +1278,7 @@
           </div>
 
           <div class="qr-placeholder" aria-label="Espaço para QR Code">
-            <span>COLOQUE AQUI<br>O QR CODE</span>
+            <img src="https://songs.horizon4282.com.br/file/horizon4282/qrcode-grupo-radio.png" width="100%">
           </div>
         </div>
       </div>
@@ -1292,8 +1290,7 @@
           <span class="eyebrow">Apoie esta missão</span>
           <h2>Sua ajuda mantém dois projetos que transformam vidas</h2>
           <p>
-            Cada contribuição fortalece a evangelização e a educação gratuita
-            oferecida pela Paróquia Divino Pai Eterno.
+            Cada contribuição fortalece a evangelização e a educação gratuita.
           </p>
         </div>
 
@@ -1333,13 +1330,12 @@
         >
           <h3 style="font-size:1.8rem;">Doe por PIX</h3>
           <p style="color:rgba(255,255,255,.72); margin:10px 0 22px;">
-            Substitua este espaço pelo QR Code e pela chave PIX oficial.
           </p>
           <div class="qr-placeholder" style="margin:auto;">
-            <span>QR CODE PIX</span>
+                     <img src="https://songs.horizon4282.com.br/file/horizon4282/qrcode-apoio-radio.png" width="100%">
+
           </div>
           <p style="margin-top:18px; color:#ffd978; font-weight:900;">
-            Chave PIX: SUA-CHAVE-AQUI
           </p>
         </div>
       </div>
@@ -1359,7 +1355,7 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="#inicio" class="brand">
+          <a href="https://horizon4282.com.br/radio-luz-louvor.html"" class="brand">
             <span class="brand-mark">🎙️</span>
             <span class="brand-text">
               <small>RÁDIO</small>
@@ -1369,7 +1365,7 @@
 
           <p style="margin-top:18px; max-width:420px;">
             Luz para o coração, louvor para a alma.
-            Uma missão da Paróquia Divino Pai Eterno.
+            Uma missão para levar a palavra de Deus através da música e do louvor.
           </p>
         </div>
 
@@ -1386,17 +1382,17 @@
         <div>
           <h3>Redes sociais</h3>
           <div class="footer-links">
-            <a href="#" target="_blank" rel="noopener">Instagram</a>
-            <a href="#" target="_blank" rel="noopener">YouTube</a>
-            <a href="#" target="_blank" rel="noopener">TikTok</a>
-            <a href="mailto:contato@radioluzelouvor.com.br">Contato</a>
+            <a href="https://www.instagram.com/ministerioluzelouvor/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.youtube.com/@ministerioluzelouvor" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.tiktok.com/@luzelouvor_oficial?lang=pt-BR" target="_blank" rel="noopener">TikTok</a>
+            <span>Contato: studio.4282@gmail.com</span>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
         <span>© <span id="currentYear"></span> Rádio Luz e Louvor.</span>
-        <span>Paróquia Divino Pai Eterno — Botucatu/SP</span>
+        <span>Botucatu/SP</span>
       </div>
     </div>
   </footer>
@@ -1408,7 +1404,7 @@
 
     const radioPlayer = document.getElementById("radioPlayer");
     const heroPlayBtn = document.getElementById("heroPlayBtn");
-    const mainPlayBtn = document.getElementById("mainPlayBtn");
+
     const muteBtn = document.getElementById("muteBtn");
     const favoriteBtn = document.getElementById("favoriteBtn");
     const shareBtn = document.getElementById("shareBtn");
@@ -1430,7 +1426,7 @@
     function updatePlayerButtons() {
       const isPaused = radioPlayer.paused;
       heroPlayBtn.textContent = isPaused ? "▶" : "❚❚";
-      mainPlayBtn.textContent = isPaused ? "▶ Ouvir agora" : "❚❚ Pausar";
+
     }
 
     async function toggleRadio() {
@@ -1449,7 +1445,7 @@
     }
 
     heroPlayBtn.addEventListener("click", toggleRadio);
-    mainPlayBtn.addEventListener("click", toggleRadio);
+
 
     radioPlayer.addEventListener("play", updatePlayerButtons);
     radioPlayer.addEventListener("pause", updatePlayerButtons);
@@ -1531,3 +1527,4 @@
   </script>
 </body>
 </html>
+
