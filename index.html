@@ -6,7 +6,7 @@
 
   <!-- SEO BÁSICO PARA APARECER NO GOOGLE -->
 <title>Rádio Luz e Louvor | Música Católica</title>
-<meta name="description" content="Ouça a Rádio Luz e Louvor ao vivo direto no seu navegador. A melhor programação católica de louvores, adoração e notícias. Acesse nossa plataforma!">
+<meta name="description" content="Acompanhe a Rádio Luz e Louvor pelo YouTube ao vivo, aplicativo ou Rádio Web. Música católica, oração, Palavra e evangelização.">
 <meta name="keywords" content="rádio luz e louvor, rádio católica online, ouvir louvores ao vivo, rádio web católica, rádio web de Botucatu">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="https://songs.horizon4282.com.br/file/horizon4282/images/icon-radio-app-1.png">
@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://songs.horizon4282.com.br/file/horizon4282/songs/og-image-radio-luz-louvor.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-  
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GLX2J0B3X"></script>
 <script>
@@ -30,7 +30,7 @@
 
   gtag('config', 'G-1GLX2J0B3X');
 </script>
-  
+
   <style>
     :root {
       --navy-950: #041126;
@@ -1004,6 +1004,12 @@
         flex-direction: column;
       }
     }
+  
+    /* Novas áreas: acessos, YouTube e apoio */
+    .access-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.access-card{padding:30px;border-radius:var(--radius-md);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft);transition:.25s ease}.access-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.access-card small{display:block;color:var(--gold-500);font-weight:900;letter-spacing:.1em;margin-bottom:8px}.access-card h3{font-size:1.8rem;color:var(--navy-900);margin-bottom:12px}.access-icon{width:62px;height:62px;display:grid;place-items:center;border-radius:18px;background:linear-gradient(135deg,var(--gold-300),var(--gold-500));font-size:1.6rem;margin-bottom:20px}.access-actions,.youtube-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.access-card>.btn{margin-top:22px}.youtube-card{border-top:4px solid #ff0000}.youtube-section{background:linear-gradient(135deg,#180707,#3a0909);color:#fff}.youtube-section h2,.youtube-section p{color:#fff}.youtube-section p{color:rgba(255,255,255,.74)}.youtube-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}.youtube-visual{min-height:360px;border-radius:30px;display:flex;align-items:center;justify-content:center;gap:22px;padding:34px;background:radial-gradient(circle at 50% 40%,rgba(255,0,0,.35),transparent 35%),linear-gradient(145deg,#280808,#090909);box-shadow:0 35px 80px rgba(0,0,0,.28)}.youtube-play{width:100px;height:72px;border-radius:22px;display:grid;place-items:center;background:#ff0000;color:#fff;font-size:2rem;padding-left:5px}.youtube-visual strong,.youtube-visual span{display:block}.youtube-visual strong{font-size:1.35rem}.youtube-visual span{color:rgba(255,255,255,.65);font-size:.85rem;letter-spacing:.16em;margin-top:5px}.support-cta{padding-top:60px}.support-banner{display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center;padding:42px;border-radius:30px;background:linear-gradient(135deg,var(--navy-950),var(--navy-700));box-shadow:var(--shadow)}.support-banner h2{color:#fff}.support-banner p{color:rgba(255,255,255,.72);max-width:720px}.support-banner .eyebrow{color:var(--gold-300)}
+    @media(max-width:980px){.access-grid,.youtube-grid{grid-template-columns:1fr}.support-banner{grid-template-columns:1fr}.youtube-visual{min-height:280px}}
+    @media(max-width:680px){.access-grid{grid-template-columns:1fr}.support-banner{padding:28px}.youtube-visual{min-height:230px;flex-direction:column;text-align:center}.youtube-actions .btn,.access-actions .btn{width:100%}}
+
   </style>
 </head>
 
@@ -1019,11 +1025,12 @@
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
-        <a href="#ouvir">Ouvir</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#aplicativo">App</a>
+        <a href="#web">Rádio Web</a>
         <a href="#programacao">Programação</a>
-        <a href="#aplicativo">Aplicativo</a>
         <a href="#comunidade">Comunidade</a>
-        <a href="#apoie">Apoie</a>
+        <a href="https://horizon4282.com.br/apoio-radio.html">Apoie</a>
       </nav>
 
       <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
@@ -1051,10 +1058,9 @@
           </p>
 
           <div class="hero-actions">
-            <a href="https://horizon4282.com.br/radio-luz-louvor" class="btn btn-primary">Ir para a rádio</a>
-            <button class="btn btn-secondary" id="installBtn" hidden style="display:none">
-              ⬇ Instalar aplicativo
-            </button>
+            <a href="https://www.youtube.com/@radioluzlouvor/live" target="_blank" rel="noopener" class="btn btn-primary">▶ Assistir ao vivo</a>
+            <a href="#acessos" class="btn btn-secondary">Escolha como ouvir</a>
+            <button class="btn btn-secondary" id="installBtn" hidden style="display:none">⬇ Instalar Web App</button>
           </div>
         </div>
 
@@ -1101,6 +1107,33 @@
       </div>
     </section>
 
+    <section class="section" id="acessos">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="eyebrow">A Rádio com você</span>
+          <h2>Escolha como acompanhar</h2>
+          <p>Ao vivo no YouTube, pelo aplicativo ou diretamente na versão Web.</p>
+        </div>
+        <div class="access-grid">
+          <article class="access-card youtube-card fade-up">
+            <div class="access-icon">▶</div><small>RÁDIO AO VIVO</small><h3>YouTube</h3>
+            <p>Assista à transmissão da Rádio Luz e Louvor e acompanhe também os conteúdos do canal.</p>
+            <div class="access-actions"><a class="btn btn-primary" href="https://www.youtube.com/@radioluzlouvor/live" target="_blank" rel="noopener">Assistir ao vivo</a><a class="btn btn-outline" href="https://www.youtube.com/@radioluzlouvor" target="_blank" rel="noopener">Ver canal</a></div>
+          </article>
+          <article class="access-card fade-up">
+            <div class="access-icon">📱</div><small>NO SEU CELULAR</small><h3>Aplicativo</h3>
+            <p>Leve a programação com você e tenha acesso rápido à Rádio Luz e Louvor no celular.</p>
+            <a class="btn btn-primary" href="#aplicativo">Conhecer o App</a>
+          </article>
+          <article class="access-card fade-up">
+            <div class="access-icon">🌐</div><small>SEM INSTALAR</small><h3>Rádio Web</h3>
+            <p>Abra a versão Web no navegador e comece a ouvir a programação da rádio.</p>
+            <a class="btn btn-primary" href="https://horizon4282.com.br/radio-luz-louvor" target="_blank" rel="noopener">Ouvir pela Web</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section-header fade-up">
@@ -1140,17 +1173,17 @@
       </div>
     </section>
 
-    <section class="section player-section" id="ouvir">
+    <section class="section player-section" id="web">
       <div class="container">
         <div class="big-player fade-up">
           <div class="album-art">🎙️</div>
 
           <div class="player-content">
-            <span class="eyebrow">Ao vivo</span>
-            <h3 id="trackTitle">Rádio Luz e Louvor</h3>
-            <div class="program" id="programTitle">A sua companhia 24 horas no ar</div>
+            <span class="eyebrow">Versão Web</span>
+            <h3 id="trackTitle">Ouça pelo navegador</h3>
+            <div class="program" id="programTitle">Sem instalar. É só abrir e ouvir.</div>
 
-   
+
 
             <div class="audio-wrap">
               <!--
@@ -1165,7 +1198,7 @@
 
             <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:22px;">
               <button class="btn btn-primary" id="mainPlayBtn">
-                <a href="https://horizon4282.com.br/radio-luz-louvor">Ir para a rádio</a></button>
+                <a href="https://horizon4282.com.br/radio-luz-louvor" target="_blank" rel="noopener">Abrir Rádio Web</a></button>
               <button class="btn btn-outline" id="shareBtn" style="display:none">↗ Compartilhar</button>
               <button class="btn btn-outline" id="favoriteBtn"  style="display:none">♡ Favoritar</button>
             </div>
@@ -1222,14 +1255,20 @@
       </div>
     </section>
 
+    <section class="section youtube-section" id="youtube">
+      <div class="container youtube-grid">
+        <div class="youtube-visual fade-up"><div class="youtube-play">▶</div><div><strong>RÁDIO LUZ E LOUVOR</strong><span>AO VIVO NO YOUTUBE</span></div></div>
+        <div class="fade-up"><span class="eyebrow">Ao vivo no YouTube</span><h2>Uma nova porta para a evangelização</h2><p>Acompanhe a transmissão ao vivo e conheça também o canal da Rádio Luz e Louvor. Música, oração, Palavra e esperança para estar com você ao longo do dia.</p><div class="youtube-actions"><a class="btn btn-primary" href="https://www.youtube.com/@radioluzlouvor/live" target="_blank" rel="noopener">▶ Assistir ao vivo</a><a class="btn btn-secondary" href="https://www.youtube.com/@radioluzlouvor" target="_blank" rel="noopener">Conhecer o canal</a></div></div>
+      </div>
+    </section>
+
     <section class="section app-section" id="aplicativo">
       <div class="container app-grid">
         <div class="fade-up">
           <span class="eyebrow">Leve a rádio com você</span>
           <h2>Ouça em qualquer lugar</h2>
           <p>
-            Acesse no celular, tablet, computador ou Smart TV.
-            Instale o aplicativo diretamente pelo navegador.
+            Tenha a Rádio Luz e Louvor no celular para acompanhar músicas, orações e nossa programação onde estiver.
           </p>
 
           <div class="device-list">
@@ -1239,9 +1278,10 @@
             <div class="device-item">📲 Tablet</div>
           </div>
 
-          <button class="btn btn-primary" id="installBtnSection" style="display:none">
-            ⬇ Instalar aplicativo
-          </button>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;">
+            <a class="btn btn-primary" href="https://play.google.com/store/search?q=R%C3%A1dio%20Luz%20e%20Louvor&c=apps" target="_blank" rel="noopener">▶ Google Play</a>
+            <button class="btn btn-secondary" id="installBtnSection" style="display:none">⬇ Instalar Web App</button>
+          </div>
         </div>
 
         <div class="phone-mockup fade-up">
@@ -1284,59 +1324,11 @@
       </div>
     </section>
 
-    <section class="section" id="apoie">
+    <section class="section support-cta" id="apoie">
       <div class="container">
-        <div class="section-header fade-up">
-          <span class="eyebrow">Apoie esta missão</span>
-          <h2>Sua ajuda mantém dois projetos que transformam vidas</h2>
-          <p>
-            Cada contribuição fortalece a evangelização e a educação gratuita.
-          </p>
-        </div>
-
-        <div class="support-grid">
-          <article class="support-card fade-up">
-            <div class="icon-box">📻</div>
-            <h3>Rádio Luz e Louvor</h3>
-            <p>
-              Ajude a manter a estrutura, a programação e a produção de novos
-              conteúdos de evangelização.
-            </p>
-            <a href="#pix" class="btn btn-primary">Apoiar a rádio</a>
-          </article>
-
-          <article class="support-card fade-up">
-            <div class="icon-box">📚</div>
-            <h3>Curso de Inglês Gratuito</h3>
-            <p>
-              Sua colaboração ajuda na compra de materiais, equipamentos
-              e recursos para os alunos.
-            </p>
-            <a href="#pix" class="btn btn-primary">Apoiar o curso</a>
-          </article>
-        </div>
-
-        <div
-          id="pix"
-          class="fade-up"
-          style="
-            margin-top:24px;
-            padding:32px;
-            border-radius:28px;
-            text-align:center;
-            background:linear-gradient(135deg,#071a3d,#103b78);
-            color:#fff;
-          "
-        >
-          <h3 style="font-size:1.8rem;">Doe por PIX</h3>
-          <p style="color:rgba(255,255,255,.72); margin:10px 0 22px;">
-          </p>
-          <div class="qr-placeholder" style="margin:auto;">
-                     <img src="https://songs.horizon4282.com.br/file/horizon4282/qrcode-apoio-radio.png" width="100%">
-
-          </div>
-          <p style="margin-top:18px; color:#ffd978; font-weight:900;">
-          </p>
+        <div class="support-banner fade-up">
+          <div><span class="eyebrow">Apoie esta missão</span><h2>Ajude a Rádio Luz e Louvor a continuar</h2><p>Nossa programação é gratuita. Sua colaboração ajuda a manter a evangelização, a formação e os projetos que colocamos a serviço da comunidade.</p></div>
+          <a class="btn btn-primary" href="/apoie/">Conheça as formas de apoiar →</a>
         </div>
       </div>
     </section>
@@ -1372,10 +1364,10 @@
         <div>
           <h3>Links</h3>
           <div class="footer-links">
-            <a href="#ouvir">Ouvir ao vivo</a>
+            <a href="#youtube">Rádio no YouTube</a>
             <a href="#programacao">Programação</a>
             <a href="#comunidade">WhatsApp</a>
-            <a href="#apoie">Apoie</a>
+            <a href="/apoie/">Apoie</a>
           </div>
         </div>
 
@@ -1383,9 +1375,9 @@
           <h3>Redes sociais</h3>
           <div class="footer-links">
             <a href="https://www.instagram.com/ministerioluzelouvor/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.youtube.com/@ministerioluzelouvor" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.youtube.com/@radioluzlouvor" target="_blank" rel="noopener">YouTube</a>
             <a href="https://www.tiktok.com/@luzelouvor_oficial?lang=pt-BR" target="_blank" rel="noopener">TikTok</a>
-            <span>Contato: studio.4282@gmail.com</span>
+            <span>Contato: <a href="https://radioluzelouvor.com.br/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="33404746575a5c1d07010b0173545e525a5f1d505c5e">[email&#160;protected]</a></span>
           </div>
         </div>
       </div>
@@ -1397,7 +1389,7 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="https://radioluzelouvor.com.br/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const siteHeader = document.getElementById("siteHeader");
     const menuBtn = document.getElementById("menuBtn");
     const navLinks = document.getElementById("navLinks");
@@ -1525,6 +1517,7 @@
 
     document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"fb4d81ec77484bd1a30145d9291d43be","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
 
